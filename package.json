@@ -1,0 +1,49 @@
+{
+  "name": "trillo-app",
+  "version": "1.0.0",
+  "description": "This is the user interfce for the trillo app",
+  "main": "index.js",
+  "homepage": "https://francislagares.github.io/trillo-app/",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "serve": "node server.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": "https://github.com/francislagares/trillo-app",
+  "author": "Francis Lagares",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.2",
+    "express": "^4.17.1",
+    "favicons-webpack-plugin": "^3.0.1",
+    "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
+    "glob": "^7.1.6",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-easings": "^2.0.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.4",
+    "purgecss-webpack-plugin": "^2.1.2",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.3.2",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "terser-webpack-plugin": "^2.3.6",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
