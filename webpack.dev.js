@@ -8,7 +8,7 @@ module.exports = merge(common, {
   mode: 'development', // Stops minifying webpack JS bundle
   devtool: 'none', // Simplify outputted bundle code for reader when development
   output: {
-    filename: 'js/[name].[contentHash].bundle.js',
+    filename: 'js/[name].[hash].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
@@ -17,10 +17,9 @@ module.exports = merge(common, {
     contentBase: 'dist',
     open: true, // Tells dev-server to open the browser after server had been started
     overlay: true, // Shows a full-screen overlay with errors or warnings
-    hot: true // update changes without full refresh in the browser
+    hot: false // update changes without full refresh in the browser
   },
 
-  watch: true, // watch for changes in any of the resolved files
   watchOptions: {
     ignored: /node_modules/,
     aggregateTimeout: 1200 // Add a delay before rebuilding once the first file changed
